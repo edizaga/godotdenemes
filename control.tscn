@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://jojhef4oodoc"]
 
+[ext_resource type="Script" uid="uid://bco78kbe8at6c" path="res://button.gd" id="1_0fbet"]
+
 [node name="Control" type="Control" unique_id=1232865986]
 layout_mode = 3
 anchors_preset = 15
@@ -20,3 +22,23 @@ offset_top = 75.0
 offset_right = 869.0
 offset_bottom = 552.0
 text = "wdwadadwaw"
+script = ExtResource("1_0fbet")
+
+[node name="Button" type="Button" parent="." unique_id=340407498]
+layout_mode = 0
+offset_left = 43.0
+offset_top = 41.0
+offset_right = 579.0
+offset_bottom = 423.0
+
+[node name="Label" type="Label" parent="Button" unique_id=2137596804]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -38.0
+offset_right = 1101.0
+offset_bottom = 59.0
+theme_override_font_sizes/font_size = 50
+text = "HEPSI CALISTI"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Panel/Button" to="Panel/Button" method="_on_pressed"]
